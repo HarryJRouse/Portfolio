@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html style="padding: 0%; margin-left: 0%; margin-right: 0%;">
+    <head>
+        <link rel="stylesheet" href="CSS/imageGalleyStyle.css">
+        <title>Image Gallery</title>
+    </head>
+    <body>
+        <div id="Page1" style="display: block;">
+            <div class="container">
+                <button class="imageButton" onclick="ToggleOn('Page1', 'Page2')" style="position:fixed; top: 10px; left: 10px;"><img src="Images/GameButton.png"></button> <button class="imageButton" onclick="ToggleOn('Page1', 'Page2')" style="position: relative;top: 10px; left: 100px;"><img src="Images/GameButton.png"></button>
+                <div >
+                    <p class="fileText">Research_Scholarship</p><p class="fileText1">Uni Projects</p>
+                </div>
+            </div>
+        </div>
+        <div id="Page2" style="display: none;">
+            <div class="container">
+                <button class="imageButton" onclick="ToggleOn('Page2', 'Page1')" style="position:fixed; top: 10px; left: 10px;"><img src="Images/ResearchScholarship/AimLabs.png" style="height: 60px; width: 100px;"></button> <button class="imageButton" onclick="ToggleOn('Page2', 'Page1')" style="position: relative;top: 10px; left: 120px;"><img src="Images/ResearchScholarship/CardMatch1.png" style="height: 60px; width: 100px;"></button>
+                <div >
+                    <p class="fileText">Research_Scholarship</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+
+    function ToggleOn(id, id2) {
+        if (document.getElementById(id).style.display == "none")
+        {
+            document.getElementById(id).style.display = "block";
+            document.getElementById(id2).style.display = "none";
+        }
+        else
+        {
+            document.getElementById(id).style.display = "none";
+            document.getElementById(id2).style.display = "block";
+        }
+    }
+</script>
