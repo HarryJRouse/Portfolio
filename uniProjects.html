@@ -1,49 +1,144 @@
 <!DOCTYPE html>
 <html style="padding: 0%; margin-left: 0%; margin-right: 0%;">
     <head>
-        <link rel="stylesheet" href="CSS/researchScholarshipStyle.css">
+        <link rel="stylesheet" href="CSS/mainStyle.css">
         <title>Harrison Rouse</title>
     </head>
     <body>
-        <div >
-            <h1>University Projects</h1>
-         </div>
-         <div class="container">
-            <p>I completed a Bachelor of Information Technology majouring in Games and Entertainment Design at the University of South Australia in 2024. Throughout this course
-                I have had the oppurtunity to work on multiple projects that have improved my coding, teamworking and agile development skills. Here are some the ones that stand out the most:
-            </p>
-            <h2>MOBA Style Game</h2>
-            <p>This was game was made for a game engines class as the final assignment. It was a solo project developed in Unity where I was given a list of features to include. It is a single player
-                game where the goal is to destroy the enemy teams base. The game plays similar to League of Legends where the character is controlled by the mouse. The player can move the character 
-                by left clicking where they want to go and attack enemy minions and towers by right clicking on them. The player also has access to three abilities that help them to clear out minion
-                waves and get to the enemy base. Some of the interesting systems I worked on for this project were: a modular character script that makes it simple to create new characters with unique
-                attacks and abilities, a simple wave spawning system for the minions, utilising the unity navmesh system for player and minion movement.
-            </p>
-            <video width="320" height="240" controls class="video">
-                <source src="Videos/MOBAStyleGame.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video> 
-            <h2>Star Eater</h2>
-            <p>This was a game that was made as a part of a game design course in my second year. This was made in Unreal Engine with 3 other people. The goal of this project was to go through
-                the entire game design process, from coming up with the idea, to pitching the idea and to finally presenting a short demo. The idea for the game was to do something similar to games
-                like Cult of the Lamb and Bear and Breakfast, where the gameplay is split into 2 different parts. For our game the player switches between hunting slimes, sneaking into thier spaceport
-                and managing the spaceport. This combined 3 different game generes into one game (top down shooter, stealth and management). The parts that I focused on were the hunting section and
-                switching between modes. I also made a very basic save and load system. Below is the trailer for the game (sorry for the bad quality).
-            </p>
-            <video width="320" height="240" controls class="video">
-                <source src="Videos/Trailer.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video> 
-            <h2>Doctor Who Game</h2>
-            <p>This game was made as a part of a 4 week studio course in my second year. The goal was to make an educational game that used the Doctor Who ip. I worked in a team of 5 people to make a
-                puzzle game. The goal of the game is to guide a laser being shot from the sonic screwdriver through obstacles to hit a dalek. We had 4 worlds with 3 levels in each of them, with each 
-                world introducing a new mechanic to the game. I did a majority of the programming in this game as my group members did everything else like writing the script and designing assets. This
-                was a great oppurtunity to make a game to fit certain design requirements with a team. I greatly improved my Unity and C# skills during this project as well as my teamwork skills.
-            </p>
-            <video width="320" height="240" controls class="video">
-                <source src="Videos/WhatGame_Demo - Made with Clipchamp.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video> 
+        <div class="navbar" >
+            <a href="index.html">About Me</a>
+            <a class="active" href="uniProjects.html">University Projects</a>
+            <a href="sideProjects.html">Side Projects</a>
+            <a href="researchScholarship.html">Research Scholarship</a>
+            <a class="name">Harrison Rouse</a>
+        </div>
+        <div class="mainContent">
+            <div>
+                <h1>University Projects</h1>
+                <p>I completed a Bachelor of Information Technology majouring in Games and Entertainment Design at the University of South Australia in 2024. Throughout this course
+                    I have had the oppurtunity to work on multiple projects that have improved my coding, teamworking and agile development skills. Here are some the ones that stand out the most:
+                </p>
+                <!--ScoreShooters-->
+                <div style="display: flex;">
+                    <div>
+                        <h2>ScoreShooters</h2>
+                        <p>During my bachelors degree I had the oppurtunity to complete an ICT Capstone Project, where me and one other person partnered with the Australian Research Centre for Interactive
+                            and Virtual Environments (IVE). We were tasked to design a novel game for the Meta Quest 3 that showed off some of the features of the device. We decided to create a game that
+                            utilised the headsets passthrough capabilities in a multiplayer setting that we ended up calling ScoreShooters.</p>
+                    </div> 
+                    <div>
+                        <video width="500" controls="" autoplay="autoplay" loop="" disablepictureinpicture="" oncontextmenu="return false;">
+                            <source src="Videos/Capstone Trailer.mp4" type="video/mp4"> 
+                         </video>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <img src="Images/UniProjects/ScoreShootersImage1.png" style="height: 200px; padding: 30px;">
+                    <img src="Images/UniProjects/ScoreShootersImage2.png" style="height: 200px; padding: 30px;">
+                    <img src="Images/UniProjects/ScoreShootersImage3.png" style="height: 200px; padding: 30px;">
+                </div>
+                <!--MOBA Style Game-->
+                <div style="display: flex; padding-top: 100px;">
+                    <div>
+                        <video width="500" controls class="video" autoplay="">
+                            <source src="Videos/MOBAStyleGame.mp4" type="video/mp4">
+                        </video> 
+                    </div>
+                    <div style="padding-left: 100px;">
+                        <h2>MOBA Style Game</h2>
+                        <p>This game plays similar to League of Legends where the character is controlled by the mouse. The player can move the character 
+                            by left clicking where they want to go and attack enemy minions and towers by right clicking on them. The player also has access to three abilities that help them to clear out minion
+                            waves and get to the enemy base. Some of the interesting systems I worked on for this project were: a modular character script that makes it simple to create new characters with unique
+                            attacks and abilities, a simple wave spawning system for the minions, utilising the unity navmesh system for player and minion movement.</p>
+                    </div> 
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <img src="Images/UniProjects/MOBAImage1.png" style="height: 200px; padding: 30px;">
+                    <img src="Images/UniProjects/MOBAImage2.png" style="height: 200px; padding: 30px;">
+                    <img src="Images/UniProjects/MOBAImage3.png" style="height: 200px; padding: 30px;">
+                </div>
+                <!--Star Eater-->
+                <div style="display: flex; padding-top: 100px;">
+                    <div>
+                        <h2>Star Eater</h2>
+                        <p>This was a game that was made as a part of a game design course in my second year. This was made in Unreal Engine with 3 other people. The goal of this project was to go through
+                            the entire game design process, from coming up with the idea, to pitching the idea and to finally presenting a short demo. The idea for the game was to do something similar to games
+                            like Cult of the Lamb and Bear and Breakfast, where the gameplay is split into 2 different parts. For our game the player switches between hunting slimes, sneaking into thier spaceport
+                            and managing the spaceport. This combined 3 different game generes into one game (top down shooter, stealth and management). The parts that I focused on were the hunting section and
+                            switching between modes. I also made a very basic save and load system. Below is the trailer for the game.</p>
+                    </div> 
+                    <div>
+                        <video width="500" controls class="video" autoplay="" style="padding-left: 100px;">
+                            <source src="Videos/Trailer.mp4" type="video/mp4">
+                        </video> 
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <img src="Images/UniProjects/StarEaterImage1.png" style="height: 200px; padding: 30px;">
+                    <img src="Images/UniProjects/StarEaterImage2.png" style="height: 200px; padding: 30px;">
+                    <img src="Images/UniProjects/StarEaterImage3.png" style="height: 200px; padding: 30px;">
+                </div>
+                <!--Doctor Who Game-->
+                <div style="display: flex; padding-top: 100px;">
+                    <div>
+                        <video width="500" controls class="video" autoplay="">
+                            <source src="Videos/WhatGame_Demo - Made with Clipchamp.mp4" type="video/mp4">
+                        </video> 
+                    </div>
+                    <div style="padding-left: 100px;">
+                        <h2>Doctor Who Game</h2>
+                        <p>This game was made as a part of a 4 week studio course in my second year. The goal was to make an educational game that used the Doctor Who ip. I worked in a team of 5 people to make a
+                            puzzle game. The goal of the game is to guide a laser being shot from the sonic screwdriver through obstacles to hit a dalek. We had 4 worlds with 3 levels in each of them, with each 
+                            world introducing a new mechanic to the game. I did a majority of the programming in this game as my group members did everything else like writing the script and designing assets. This
+                            was a great oppurtunity to make a game to fit certain design requirements with a team. I greatly improved my Unity and C# skills during this project as well as my teamwork skills.</p>
+                    </div> 
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <img src="Images/UniProjects/DoctorWhoImage1.png" style="height: 200px; padding: 30px;">
+                    <img src="Images/UniProjects/DoctorWhoImage2.png" style="height: 200px; padding: 30px;">
+                    <img src="Images/UniProjects/DoctorWhoImage3.png" style="height: 200px; padding: 30px;">
+                </div>
+                <!--Mobile Puzzle Game-->
+                <div style="display: flex; padding-top: 100px;">
+                    <div>
+                        <h2>Mobile Puzzle Game</h2>
+                        <p>This game was made as part of an Android game development course. It is a puzzle game where the goal is to guide a fox to the end of each level by placing down springs and other interactables.
+                            Each level has traps to avoid and the fox moves automatically once the play button is pressed. I worked on this project with one other person and I did the programming for the level grid system
+                            and the tile drag and drop and inventory system. I also made a few of the levels for the game as well as the level creation and loading system. This project was made in Android Stuido and taught
+                            me a lot about mobile game development.
+                        </p>
+                    </div> 
+                    <div>
+                        <video width="500" controls class="video" autoplay="" style="padding-left: 100px;">
+                            <source src="Videos/gamefootage_-_Made_with_Clipchamp.mp4" type="video/mp4">
+                        </video> 
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <img src="Images/UniProjects/MobileImage1.png" style="height: 200px; padding: 30px;">
+                    <img src="Images/UniProjects/MobileImage2.png" style="height: 200px; padding: 30px;">
+                    <img src="Images/UniProjects/MobileImage3.png" style="height: 200px; padding: 30px;">
+                </div>
+                <!--Mobile Endless Runner-->
+                <div style="display: flex; padding-top: 100px;">
+                    <div>
+                        <video width="500" controls class="video" autoplay="">
+                            <source src="Videos/2024-04-22 11-29-31.mkv" type="video/mp4">
+                        </video> 
+                    </div>
+                    <div style="padding-left: 100px;">
+                        <h2>Mobile Endless Runner</h2>
+                        <p>This game was also made as a part of the previously mentioned Android game development course. It is an endless runner similar to JetPack Joyride where the aim is to avoid obstacles and shoot enemies to
+                            get as far as you can. This was a solo project in Android Studio and it has a full main menu and game loop. I also did some of the art for this game and I also made the background music.
+                        </p>
+                    </div> 
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <img src="Images/UniProjects/RunnerImage1.png" style="height: 200px; padding: 30px;">
+                    <img src="Images/UniProjects/RunnerImage2.png" style="height: 200px; padding: 30px;">
+                    <img src="Images/UniProjects/RunnerImage3.png" style="height: 200px; padding: 30px;">
+                </div>
+            </div> 
         </div>
     </body>
 </html>
