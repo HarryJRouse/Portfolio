@@ -39,12 +39,13 @@ body {
   margin-top: 0%;
 }
 
-.mainContent{
-  padding-left: 300px;
-  padding-right: 300px;
+#mainContent{
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 1%
 }
 
-.navbar {
+#navbar {
   background-color: #ff7c64; 
   overflow: hidden; 
   position:sticky;
@@ -54,7 +55,7 @@ body {
   z-index: 1000;
 } 
 
-.navbar a {
+#navbar a {
   float: left;
   color: black;
   text-align: center;
@@ -65,17 +66,17 @@ body {
   height: 80px;
 } 
 
-.navbar a:hover {
+#navbar a:hover {
   background-color: #bb4530;
   color: black;
 }
 
-.navbar a.active {
+#navbar a.active {
   background-color: #bb4530;
   color: white;
 }
 
-.navbar a.name{
+#navbar a.name{
   font-family: RobotoSlab; 
   font-size: 20px; 
   margin-left: 960px;

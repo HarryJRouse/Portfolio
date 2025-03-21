@@ -2,17 +2,19 @@
 <html style="padding: 0%; margin-left: 0%; margin-right: 0%;">
     <head>
         <link rel="stylesheet" href="CSS/mainStyle.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <title>Harrison Rouse</title>
     </head>
     <body>
-        <div class="navbar" >
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <div div class="container-fluid" id="navbar">
             <a href="index.html">About Me</a>
             <a href="uniProjects.html">University Projects</a>
             <a class="active" href="sideProjects.html">Side Projects</a>
             <a href="researchScholarship.html">Research Scholarship</a>
             <a class="name">Harrison Rouse</a>
         </div>
-        <div class="mainContent">
+        <div class="container-fluid" id="mainContent">
             <div >
                 <h1>Side Projects</h1>
             </div>
@@ -21,49 +23,61 @@
                     as they are more skills tests and small challenges that I have set for myself, as opposed to full fledged games.
                 </p>
                 <!--Geometry Dash-->
-                <div style="display: flex;">
-                    <div>
+                <div class="row" style="padding-top: 5%">
+                    <div class="col-md-7" style="padding-right:5%">
                         <h2>Geometry Dash Recreation</h2>
                         <i>Level Design, C#, Unity</i>
                         <p>One of the first projects I did was to recreate the game Geometry Dash in  Unity. This was done in my final year of high school and helped me to wrap my head around how Unity 
                             and its 2D physics system works. It was also a great chance to mess around with the tile map system. On top of this I also made a 'side mode' that had a basic custom animation
                             and very simple procedural generation. This side mode is very barebones, but it gave me a great introduction into how procedural generation works.</p>
                     </div> 
-                    <div>
-                        <video width="500" controls class="video" style="padding-left: 100px;">
-                            <source src="Videos/SquareRun - Made with Clipchamp.mp4" type="video/mp4">
-                        </video> 
+                    <div class="col-md-5">
+                        <video width="100%" controls="" loop="false" disablepictureinpicture="" oncontextmenu="return false;">
+                            <source src="Videos/SquareRun - Made with Clipchamp.mp4" type="video/mp4"> 
+                         </video>
                     </div>
                 </div>
-                <div style="display: flex; justify-content: center;">
-                    <img src="Images/SideProjects/Screenshot (97).png" style="height: 200px; padding: 30px;">
-                    <img src="Images/SideProjects/Screenshot (98).png" style="height: 200px; padding: 30px;">
-                    <img src="Images/SideProjects/Screenshot (99).png" style="height: 200px; padding: 30px;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="Images/SideProjects/Screenshot (97).png" style="width: 100%; padding: 5%;">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="Images/SideProjects/Screenshot (98).png" style="width: 100%; padding: 5%;">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="Images/SideProjects/Screenshot (99).png" style="width: 100%; padding: 5%;">
+                    </div>
                 </div>
                 <!--Top Down Shooter-->
-                <div style="display: flex; padding-top: 100px;">
-                    <div>
-                        <video width="500" controls class="video">
-                            <source src="Videos/TopDownShooterDemo - Made with Clipchamp.mp4" type="video/mp4">
-                        </video> 
-                    </div>
-                    <div style="padding-left: 100px;">
+                <div class="row" style="padding-top: 5%">
+                    <div class="col-md-5">
+                        <video width="100%" controls="" loop="false" disablepictureinpicture="" oncontextmenu="return false;">
+                            <source src="Videos/TopDownShooterDemo - Made with Clipchamp.mp4" type="video/mp4"> 
+                         </video>
+                    </div> 
+                    <div class="col-md-7" style="padding-left:5%">
                         <h2>Top Down Shooter</h2>
                         <i>Game Systems, Boss Design, C#, Unity</i>
                         <p>The idea for this project was to design a top down shooter similar to space invaders, where the player controls a ship that can move around and shoot. I wanted to make it a boss rush
                             style game that was fast-paced and encouraged the player to learn the boss patterns to win. I have a fully playable demo that includes one simple boss fight. I planned to keep working
                             on this project at some point, but I have not found the time recently as I am focused on my studies. This project helped me work on polishing mechanics and adding in all the features
                             needed for a short, but complete game demo.</p>
-                    </div> 
+                    </div>
                 </div>
-                <div style="display: flex; justify-content: center;">
-                    <img src="Images/SideProjects/TopDownShooter1.png" style="height: 200px; padding: 30px;">
-                    <img src="Images/SideProjects/TopDownShooter2.png" style="height: 200px; padding: 30px;">
-                    <img src="Images/SideProjects/TopDownShooter3.png" style="height: 200px; padding: 30px;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="Images/SideProjects/TopDownShooter1.png" style="width: 100%; padding: 5%;">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="Images/SideProjects/TopDownShooter2.png" style="width: 100%; padding: 5%;">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="Images/SideProjects/TopDownShooter3.png" style="width: 100%; padding: 5%;">
+                    </div>
                 </div>
                 <!--Angry Birds-->
-                <div style="display: flex; padding-top: 100px;">
-                    <div>
+                <div class="row" style="padding-top: 5%">
+                    <div class="col-md-7" style="padding-right:5%">
                         <h2>Angry Birds Recreation</h2>
                         <i>Physics Systems, Destructable Objects, C#, Unity</i>
                         <p>This project started out as more of a joke project. One of my friends drew a picture of what he described as a bird, me being the funny person that I am decided that it was in my best interest
@@ -71,38 +85,49 @@
                             mess around with forces and physics in Unity and it also helped me improve my object-oriented programming skills. This was because everything in the game needed to be designed in a way that
                             was reusable across multiple levels.</p>
                     </div> 
-                    <div>
-                        <video width="500" controls class="video" style="padding-left: 100px;">
-                            <source src="Videos/AngryBirbsDemo - Made with Clipchamp.mp4" type="video/mp4">
-                        </video> 
+                    <div class="col-md-5">
+                        <video width="100%" controls="" loop="false" disablepictureinpicture="" oncontextmenu="return false;">
+                            <source src="Videos/AngryBirbsDemo - Made with Clipchamp.mp4" type="video/mp4"> 
+                         </video>
                     </div>
                 </div>
-                <div style="display: flex; justify-content: center;">
-                    <img src="Images/SideProjects/AngyBirbs3.png" style="height: 200px; padding: 30px;">
-                    <img src="Images/SideProjects/AngryBirbs2.png" style="height: 200px; padding: 30px;">
-                    <img src="Images/SideProjects/AngryBirbs1.png" style="height: 200px; padding: 30px;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="Images/SideProjects/AngryBirbs1.png" style="width: 100%; padding: 5%;">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="Images/SideProjects/AngryBirbs2.png" style="width: 100%; padding: 5%;">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="Images/SideProjects/AngyBirbs3.png" style="width: 100%; padding: 5%;">
+                    </div>
                 </div>
                 <!--GMTK 2024-->
-                <div style="display: flex; padding-top: 100px;">
-                    <div>
-                        <video width="500" controls class="video">
-                            <source src="Videos/GMTKVideo.mkv" type="video/mp4">
-                        </video> 
-                    </div>
-                    <div style="padding-left: 100px;">
+                <div class="row" style="padding-top: 5%">
+                    <div class="col-md-5">
+                        <video width="100%" controls="" loop="false" disablepictureinpicture="" oncontextmenu="return false;">
+                            <source src="Videos/GMTKVideo.mkv" type="video/mp4"> 
+                         </video>
+                    </div> 
+                    <div class="col-md-7" style="padding-left:5%">
                         <h2>GMTK Submission 2024</h2>
                         <i>Level Design, Fast Prototyping, C#, Unity</i>
                         <p>This was a game I submitted for the GMTK game jam in 2024. The time limit for the jam was four days with the theme being "built to scale".
                             The game I made is a 2D puzzle platformer where then player can grow and shrink in size to move boxes and traverse the level. It has five playable
                             levels and I programmed everything myself in the Unity game engine. I did not get as much time to work on it as I would have, but this was a great
-                            experience as my first game jam. The game can be downloaded and played <a target="_blank" href="https://your-pet-fish.itch.io/gmtk-scale">here</a>.
-                        </p>
-                    </div> 
+                            experience as my first game jam. The game can be downloaded and played <a target="_blank" href="https://your-pet-fish.itch.io/gmtk-scale">here</a>.</p>
+                    </div>
                 </div>
-                <div style="display: flex; justify-content: center;">
-                    <img src="Images/SideProjects/GMTKImage1.png" style="height: 200px; padding: 30px;">
-                    <img src="Images/SideProjects/GMTKImage2.png" style="height: 200px; padding: 30px;">
-                    <img src="Images/SideProjects/GMTKImage3.png" style="height: 200px; padding: 30px;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="Images/SideProjects/GMTKImage1.png" style="width: 100%; padding: 5%;">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="Images/SideProjects/GMTKImage2.png" style="width: 100%; padding: 5%;">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="Images/SideProjects/GMTKImage3.png" style="width: 100%; padding: 5%;">
+                    </div>
                 </div>
             </div>
         </div> 
